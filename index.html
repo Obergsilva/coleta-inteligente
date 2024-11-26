@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coleta Inteligente</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Coleta Inteligente</h1>
+        <nav>
+            <a href="#cadastro">Cadastro</a>
+            <a href="#mapa">Mapa</a>
+            <a href="#agendamento">Agendamento</a>
+        </nav>
+    </header>
+    
+    <main>
+        <!-- Seção de Cadastro -->
+        <section id="cadastro">
+            <h2>Cadastro de Usuários</h2>
+            <form id="formCadastro">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="tipo">Tipo de Usuário:</label>
+                <select id="tipo" name="tipo" required>
+                    <option value="cidadão">Cidadão</option>
+                    <option value="catador">Catador</option>
+                    <option value="empresa">Empresa</option>
+                </select>
+                
+                <button type="submit">Cadastrar</button>
+            </form>
+            <div id="mensagemCadastro"></div>
+        </section>
+        
+        <!-- Seção de Mapa -->
+        <section id="mapa">
+            <h2>Mapa de Pontos de Coleta</h2>
+            <div id="mapaContainer">
+                <p>Mapa interativo será carregado aqui...</p>
+            </div>
+        </section>
+        
+        <!-- Seção de Agendamento -->
+        <section id="agendamento">
+            <h2>Agendar Coleta</h2>
+            <form id="formAgendamento">
+                <label for="endereco">Endereço:</label>
+                <input type="text" id="endereco" name="endereco" required>
+                
+                <label for="data">Data:</label>
+                <input type="date" id="data" name="data" required>
+                
+                <label for="hora">Hora:</label>
+                <input type="time" id="hora" name="hora" required>
+                
+                <button type="submit">Agendar</button>
+            </form>
+            <div id="mensagemAgendamento"></div>
+        </section>
+    </main>
+    
+    <footer>
+        <p>&copy; 2024 Coleta Inteligente</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
